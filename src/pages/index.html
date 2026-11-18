@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyBook — Бронювання авіаквитків</title>
+</head>
+<body>
+    <header>
+        <h1>SkyBook</h1>
+        <nav>
+            <a href="/">Головна</a>
+            <a href="/flights">Рейси</a>
+            <a href="/contacts">Контакти</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Подорож починається тут</h2>
+            <p>Знайди та забронюй авіаквитки за кілька хвилин.</p>
+        </section>
+
+        <section>
+            <h2>Пошук авіаквитків</h2>
+            <form>
+                <label>
+                    Звідки:
+                    <input type="text" name="departure" required>
+                </label>
+
+                <label>
+                    Куди:
+                    <input type="text" name="destination" required>
+                </label>
+
+                <label>
+                    Дата вильоту:
+                    <input type="date" name="date" required>
+                </label>
+
+                <button type="submit">Знайти рейси</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>SkyBook © 2026</p>
+    </footer>
+</body>
+</html>
