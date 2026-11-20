@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Форма бронювання авіаквитків SkyBook.">
+    <title>SkyBook — Бронювання</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SkyBook</h1>
+        <nav aria-label="Головна навігація">
+            <a href="index.html">Головна</a>
+            <a href="flights.html">Рейси</a>
+            <a href="booking.html" class="active">Бронювання</a>
+            <a href="contacts.html">Контакти</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-layout">
+
+            <div class="content">
+                <section>
+                    <h2>Бронювання авіаквитка</h2>
+                    <p>Заповни форму, щоб оформити демонстраційне бронювання.</p>
+
+                    <form action="#" method="get">
+                        <label>
+                            Ім'я:
+                            <input type="text" name="first_name" placeholder="Введи ім'я" required>
+                        </label>
+
+                        <label>
+                            Прізвище:
+                            <input type="text" name="last_name" placeholder="Введи прізвище" required>
+                        </label>
+
+                        <label>
+                            Електронна пошта:
+                            <input type="email" name="email" placeholder="example@mail.com" required>
+                        </label>
+
+                        <label>
+                            Номер телефону:
+                            <input type="tel" name="phone" placeholder="+380..." required>
+                        </label>
+
+                        <label>
+                            Обраний рейс:
+                            <select name="flight" required>
+                                <option value="">Оберіть рейс</option>
+                                <option value="SB-101">SB-101 — Київ — Варшава</option>
+                                <option value="SB-205">SB-205 — Львів — Прага</option>
+                                <option value="SB-310">SB-310 — Одеса — Рим</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            Дата вильоту:
+                            <input type="date" name="departure_date" required>
+                        </label>
+
+                        <button type="submit">Підтвердити бронювання</button>
+                    </form>
+                </section>
+
+                <section>
+                    <h2>Як відбувається бронювання?</h2>
+
+                    <div class="card-grid">
+                        <article class="card">
+                            <h3>1. Вибір рейсу</h3>
+                            <p>Знайди потрібний напрямок у каталозі.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>2. Дані пасажира</h3>
+                            <p>Вкажи контактну інформацію та обраний рейс.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>3. Підтвердження</h3>
+                            <p>Перевір введені дані перед завершенням оформлення.</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <h2>Важливо знати</h2>
+                <p>Перед оформленням перевір правильність імені, прізвища та контактних даних.</p>
+
+                <h3>Підказка</h3>
+                <p class="muted">У цій лабораторній роботі форма демонструє HTML-елементи та CSS-оформлення. Реальна оплата й бронювання не виконуються.</p>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>SkyBook © 2026. Сервіс пошуку авіаквитків.</p>
+    </footer>
+
+</body>
+</html>

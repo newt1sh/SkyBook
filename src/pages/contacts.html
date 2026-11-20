@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контактна інформація сервісу SkyBook.">
+    <title>SkyBook — Контакти</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SkyBook</h1>
+        <nav aria-label="Головна навігація">
+            <a href="index.html">Головна</a>
+            <a href="flights.html">Рейси</a>
+            <a href="booking.html">Бронювання</a>
+            <a href="contacts.html" class="active">Контакти</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-layout">
+
+            <div class="content">
+                <section>
+                    <h2>Зв'яжіться з нами</h2>
+                    <p>Якщо у вас виникли запитання щодо пошуку або бронювання авіаквитків, скористайтеся контактною формою.</p>
+
+                    <form action="#" method="get">
+                        <label>
+                            Ваше ім'я:
+                            <input type="text" name="name" placeholder="Введіть ім'я" required>
+                        </label>
+
+                        <label>
+                            Електронна пошта:
+                            <input type="email" name="email" placeholder="example@mail.com" required>
+                        </label>
+
+                        <label>
+                            Тема повідомлення:
+                            <input type="text" name="subject" placeholder="Тема звернення" required>
+                        </label>
+
+                        <label>
+                            Повідомлення:
+                            <textarea name="message" rows="5" placeholder="Ваше повідомлення..." required></textarea>
+                        </label>
+
+                        <button type="submit">Надіслати повідомлення</button>
+                    </form>
+                </section>
+
+                <section>
+                    <h2>Контактна інформація</h2>
+
+                    <div class="card-grid">
+                        <article class="card">
+                            <h3>Електронна пошта</h3>
+                            <p>support@skybook.example</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Телефон</h3>
+                            <p>+380 00 000 00 00</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Графік роботи</h3>
+                            <p>Понеділок — п'ятниця</p>
+                            <p>09:00 — 18:00</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <h2>Підтримка</h2>
+                <p>Ми прагнемо зробити пошук авіаквитків простим і зрозумілим.</p>
+
+                <h3>Перед зверненням</h3>
+                <ul>
+                    <li>Опишіть проблему.</li>
+                    <li>Вкажіть тему звернення.</li>
+                    <li>Залиште актуальну електронну пошту.</li>
+                </ul>
+
+                <p class="muted">Контактні дані наведені для демонстрації навчального проєкту.</p>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>SkyBook © 2026. Сервіс пошуку авіаквитків.</p>
+    </footer>
+
+</body>
+</html>

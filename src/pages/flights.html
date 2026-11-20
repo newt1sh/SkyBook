@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог доступних авіарейсів SkyBook.">
+    <title>SkyBook — Рейси</title>
+    <link rel="stylesheet" href="../css/style.css">
+<style>
+    .flight-intro {
+        border-left: 4px solid #f0a83c;
+        padding-left: 16px;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>SkyBook</h1>
+        <nav aria-label="Головна навігація">
+            <a href="index.html">Головна</a>
+            <a href="flights.html" class="active">Рейси</a>
+            <a href="booking.html">Бронювання</a>
+            <a href="contacts.html">Контакти</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-layout">
+
+            <div class="content">
+                <section>
+                    <h2>Каталог авіарейсів</h2>
+<img
+    src="../assets/img/skybook-banner.svg"
+    alt="Ілюстрація літака та маршруту подорожі"
+    style="width: 100%; border-radius: 12px; margin: 20px 0;"
+>
+                    <p class="notice flight-intro">Переглянь доступні напрямки та обери рейс для своєї наступної подорожі.</p>
+
+                    <blockquote style="font-style: italic;">
+                        «Подорож у тисячу миль починається з першого кроку».
+                    </blockquote>
+
+                    <h3>Популярні напрямки</h3>
+                    <ul>
+                        <li>Київ — Варшава</li>
+                        <li>Львів — Прага</li>
+                        <li>Одеса — Рим</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Доступні рейси</h2>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Рейс</th>
+                                    <th>Відправлення</th>
+                                    <th>Прибуття</th>
+                                    <th>Ціна</th>
+                                    <th>Дія</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SB-101</td>
+                                    <td>Київ</td>
+                                    <td>Варшава</td>
+                                    <td>2 500 грн</td>
+                                    <td><a href="booking.html">Обрати</a></td>
+                                </tr>
+                                <tr>
+                                    <td>SB-205</td>
+                                    <td>Львів</td>
+                                    <td>Прага</td>
+                                    <td>3 200 грн</td>
+                                    <td><a href="booking.html">Обрати</a></td>
+                                </tr>
+                                <tr>
+                                    <td>SB-310</td>
+                                    <td>Одеса</td>
+                                    <td>Рим</td>
+                                    <td>4 800 грн</td>
+                                    <td><a href="booking.html">Обрати</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Інші пропозиції</h2>
+                    <div class="card-grid">
+                        <article class="card">
+                            <h3>Берлін</h3>
+                            <p>Подорож до культурного центру Німеччини.</p>
+                            <p><strong>Від 3 500 грн</strong></p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Париж</h3>
+                            <p>Відвідай одну з найвідоміших столиць Європи.</p>
+                            <p><strong>Від 5 000 грн</strong></p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Будапешт</h3>
+                            <p>Відкрий для себе архітектуру Угорщини.</p>
+                            <p><strong>Від 2 900 грн</strong></p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <h2>Інформація</h2>
+                <p>Ціни в каталозі наведені як демонстраційні приклади.</p>
+
+                <h3>Перед польотом</h3>
+                <ul>
+                    <li>Перевір документи.</li>
+                    <li>Уточни правила багажу.</li>
+                    <li>Приїжджай в аеропорт завчасно.</li>
+                </ul>
+
+                <p class="muted">Дані рейсів у цій навчальній версії не є реальними пропозиціями авіакомпаній.</p>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>SkyBook © 2026. Сервіс пошуку авіаквитків.</p>
+    </footer>
+
+</body>
+</html>
