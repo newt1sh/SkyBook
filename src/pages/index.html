@@ -1,53 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkyBook — Бронювання авіаквитків</title>
+    <meta name="description" content="SkyBook — пошук і бронювання авіаквитків.">
+    <title>SkyBook — Головна</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
     <header>
         <h1>SkyBook</h1>
-        <nav>
-            <a href="/">Головна</a>
-            <a href="/flights">Рейси</a>
-            <a href="/contacts">Контакти</a>
+        <nav aria-label="Головна навігація">
+            <a href="index.html" class="active">Головна</a>
+            <a href="flights.html">Рейси</a>
+            <a href="booking.html">Бронювання</a>
+            <a href="contacts.html">Контакти</a>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Подорож починається тут</h2>
-            <p>Знайди та забронюй авіаквитки за кілька хвилин.</p>
-        </section>
+        <div class="page-layout">
 
-        <section>
-            <h2>Пошук авіаквитків</h2>
-            <form>
-                <label>
-                    Звідки:
-                    <input type="text" name="departure" required>
-                </label>
+            <div class="content">
+                <section>
+                    <h2>Подорож починається тут</h2>
+                    <p>Знайди зручний рейс, порівняй доступні пропозиції та забронюй авіаквиток за кілька хвилин.</p>
+                    <a class="button" href="flights.html">Переглянути рейси</a>
+                </section>
 
-                <label>
-                    Куди:
-                    <input type="text" name="destination" required>
-                </label>
+                <section>
+                    <h2>Пошук авіаквитків</h2>
+                    <form action="flights.html" method="get">
+                        <label>
+                            Звідки:
+                            <input type="text" name="departure" placeholder="Наприклад, Київ" required>
+                        </label>
 
-                <label>
-                    Дата вильоту:
-                    <input type="date" name="date" required>
-                </label>
+                        <label>
+                            Куди:
+                            <input type="text" name="destination" placeholder="Наприклад, Варшава" required>
+                        </label>
 
-                <button type="submit">Знайти рейси</button>
-            </form>
-        </section>
+                        <label>
+                            Дата вильоту:
+                            <input type="date" name="date" required>
+                        </label>
+
+                        <button type="submit">Знайти рейси</button>
+                    </form>
+                </section>
+
+                <section>
+                    <h2>Популярні напрямки</h2>
+                    <div class="card-grid">
+                        <article class="card">
+                            <h3>Київ — Варшава</h3>
+                            <p>Зручний напрямок для подорожей до Польщі.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Львів — Прага</h3>
+                            <p>Відкрий для себе столицю Чехії.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Одеса — Рим</h3>
+                            <p>Плануй подорож до Італії.</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <h2>Чому SkyBook?</h2>
+                <ul>
+                    <li>Зручний пошук рейсів</li>
+                    <li>Порівняння пропозицій</li>
+                    <li>Просте бронювання</li>
+                    <li>Інформація про подорож</li>
+                </ul>
+
+                <h3>Порада мандрівнику</h3>
+                <p class="muted">Перевіряй умови перевезення багажу перед бронюванням квитка.</p>
+            </aside>
+
+        </div>
     </main>
 
     <footer>
-        <p>SkyBook © 2026</p>
+        <p>SkyBook © 2026. Сервіс пошуку авіаквитків.</p>
     </footer>
+
 </body>
 </html>
